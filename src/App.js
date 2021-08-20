@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
-          href="999-555-0095"
+          href="tel:999-555-0095"
           target="_blank"
           rel="noopener noreferrer"
         >

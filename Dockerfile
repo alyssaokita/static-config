@@ -1,7 +1,9 @@
-FROM node:14.17.2 as build
+FROM node:14.17.5 as build
 WORKDIR /app
 COPY package.json .
-RUN npm i
+RUN echo "npm $(npm --version)"
+RUN echo "node $(node --version)"
+RUN npm ci
 COPY . .
 
 RUN npm run build

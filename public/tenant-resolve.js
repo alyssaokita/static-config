@@ -16,6 +16,9 @@ if (url.port == 3000) {
 } else if (url.port === 80 || (url.port !== 0 && !url.port)) {
     src = '/prod-config.js';
     tenantId = 'tenant2_' + url.hostname;
+} else if (url.hostname == 'localhost' || url.hostname == '127.0.0.1') {
+    src = '/localhost-config.js';
+    tenantId = 'tenant3_' + url.hostname;
 }
 window.MyAppConfig['tenantId'] = tenantId;
 script.src = src;

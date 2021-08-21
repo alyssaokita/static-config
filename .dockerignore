@@ -4,4 +4,5 @@ build
 ./image-build.sh
 ./image-clean.sh
 ./image-run.sh
+./rerun.sh
 .dockerignore

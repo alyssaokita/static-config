@@ -1,5 +1,7 @@
 node_modules
+build
 
-image-build.sh
-image-run.sh
+./image-build.sh
+./image-clean.sh
+./image-run.sh
 .dockerignore

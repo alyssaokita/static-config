@@ -1,8 +1,7 @@
 FROM node:14.17.5 as build
 WORKDIR /app
 COPY package.json .
-RUN echo "npm $(npm --version)"
-RUN echo "node $(node --version)"
+COPY package-lock.json .
 RUN npm ci
 COPY . .
 
